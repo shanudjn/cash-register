@@ -2,6 +2,8 @@ var billAmount = document.querySelector('#bill-amount');
 var cashAmount = document.querySelector('#cash-amount');
 var checkButton = document.querySelector('#check-button');
 var resetButton = document.querySelector('#reset-button');
+var listSection = document.querySelector('#list-section');
+var unit = document.querySelector('#unit');
 
 var notes = [2000, 500, 100, 20, 10, 5, 1];
 var numberOfNotes = [0, 0, 0, 0, 0, 0, 0];
@@ -24,9 +26,11 @@ function getChange() {
     }
 
     for (let i = 0; i < numberOfNotes.length; i++) {
-        console.log(notes[i], numberOfNotes[i]);
+        var listItem = document.createElement("div");
+        listItem.className = 'list-item'
+        var item = listSection.appendChild(listItem);
+        item.innerHTML += `<p>` + notes[i] + `</p><p>` + numberOfNotes[i] + `</p>`
+        console.log(item)
 
     }
-
-
 }
