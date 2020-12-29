@@ -65,10 +65,10 @@ input{
     margin: 1rem;
     padding: 1rem;
 }
-.list-item {
-    margin: 2rem;
-    padding: 2rem;
-}
-.list-item p{
-    margin: 1rem;
+
+.list-item span{
+    display: inline;
+    margin: 50px;
+    text-align: left;
+ 
 }

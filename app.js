@@ -29,8 +29,16 @@ function getChange() {
         var listItem = document.createElement("div");
         listItem.className = 'list-item'
         var item = listSection.appendChild(listItem);
-        item.innerHTML += `<p>` + notes[i] + `</p><p>` + numberOfNotes[i] + `</p>`
+        item.innerHTML += `<span>` + notes[i] + `</span><span>` + numberOfNotes[i] + `</span>`
         console.log(item)
 
     }
+}
+
+resetButton.addEventListener('click', resetList);
+
+function resetList() {
+    billAmount.value = '';
+    cashAmount.value = '';
+    listSection.innerHTML = "";
 }
