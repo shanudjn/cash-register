@@ -29,7 +29,7 @@ function getChange() {
         var listItem = document.createElement("ul");
         listItem.className = 'list-item'
         var item = denoSection.appendChild(listItem);
-        item.innerHTML += `<li>` + notes[i] + `<span>-----</span>` + numberOfNotes[i] + `</li>`
+        item.innerHTML += `<li>No of &#x20B9;&nbsp;` + notes[i] + ` &nbsp;: &nbsp;` + numberOfNotes[i] + `</li>`
         console.log(item)
 
     }
@@ -40,5 +40,5 @@ resetButton.addEventListener('click', resetList);
 function resetList() {
     billAmount.value = '';
     cashAmount.value = '';
-    listSection.innerHTML = "";
+    denoSection.innerHTML = "";
 }
