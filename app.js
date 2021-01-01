@@ -3,15 +3,13 @@ var cashAmount = document.querySelector('#cash-amount');
 var checkButton = document.querySelector('#check-button');
 var resetButton = document.querySelector('#reset-button');
 var denoSection = document.querySelector('#deno-section');
-var unit = document.querySelector('#unit');
 
 var notes = [2000, 500, 100, 20, 10, 5, 1];
 var numberOfNotes = [0, 0, 0, 0, 0, 0, 0];
 
 
-
-
 checkButton.addEventListener('click', getChange);
+
 function getChange() {
     var bill = billAmount.value;
     var amount = cashAmount.value;
