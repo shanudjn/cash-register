@@ -11,6 +11,8 @@ var numberOfNotes = [0, 0, 0, 0, 0, 0, 0];
 checkButton.addEventListener('click', getChange);
 
 function getChange() {
+    denoSection.innerHTML = "";
+
     var bill = billAmount.value;
     var amount = cashAmount.value;
     var returnAmount = amount - bill;
